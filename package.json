@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-open-url",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Open a URL.",
   "license": "Apache-2.0",
   "author": {
