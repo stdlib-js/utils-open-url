@@ -76,8 +76,8 @@ tape( 'if the platform is `Darwin`, the function invokes the `open` command', op
 	var url;
 
 	openURL = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/is-darwin': true,
-		'@stdlib/assert/is-windows': false,
+		'@stdlib/assert-is-darwin': true,
+		'@stdlib/assert-is-windows': false,
 		'child_process': {
 			'spawn': spawn
 		}
@@ -105,8 +105,8 @@ tape( 'if the platform is `Windows`, the function invokes the `cmd` command', op
 	var url;
 
 	openURL = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/is-darwin': false,
-		'@stdlib/assert/is-windows': true,
+		'@stdlib/assert-is-darwin': false,
+		'@stdlib/assert-is-windows': true,
 		'child_process': {
 			'spawn': spawn
 		}
@@ -137,8 +137,8 @@ tape( 'if the platform is neither `Darwin` or `Windows`, the function invokes th
 	var url;
 
 	openURL = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/is-darwin': false,
-		'@stdlib/assert/is-windows': false,
+		'@stdlib/assert-is-darwin': false,
+		'@stdlib/assert-is-windows': false,
 		'child_process': {
 			'spawn': spawn
 		}
