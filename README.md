@@ -24,14 +24,30 @@ limitations under the License.
 
 > Open a URL.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-open-url
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import openURL from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-open-url@esm/index.mjs';
+var openURL = require( '@stdlib/utils-open-url' );
 ```
 
 #### openURL( url )
@@ -88,13 +104,8 @@ var win = openURL( 'https://google.com' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import openURL from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-open-url@esm/index.mjs';
+```javascript
+var openURL = require( '@stdlib/utils-open-url' );
 
 // Open a URL:
 var proc = openURL( 'https://github.com' );
@@ -105,17 +116,65 @@ function close() {
 }
 
 setTimeout( close, 5000 );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use the module as a general utility, install the module globally
+
+```bash
+npm install -g @stdlib/utils-open-url
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: open-url [options] <url>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ open-url https://github.com
+<pid>
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -134,7 +193,7 @@ setTimeout( close, 5000 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
