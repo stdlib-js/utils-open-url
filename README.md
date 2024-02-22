@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import openURL from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-open-url@deno/mod.js';
+import openURL from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-open-url@v0.2.1-deno/mod.js';
 ```
 
 #### openURL( url )
@@ -100,7 +100,7 @@ var win = openURL( 'https://google.com' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import openURL from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-open-url@deno/mod.js';
+import openURL from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-open-url@v0.2.1-deno/mod.js';
 
 // Open a URL:
 var proc = openURL( 'https://github.com' );
