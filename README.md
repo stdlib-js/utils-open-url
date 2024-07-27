@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import openURL from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-open-url@esm/index.mjs';
+import openURL from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-open-url@v0.2.2-esm/index.mjs';
 ```
 
 #### openURL( url )
@@ -105,7 +105,7 @@ var win = openURL( 'https://google.com' );
 <body>
 <script type="module">
 
-import openURL from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-open-url@esm/index.mjs';
+import openURL from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-open-url@v0.2.2-esm/index.mjs';
 
 // Open a URL:
 var proc = openURL( 'https://github.com' );
