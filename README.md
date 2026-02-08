@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import openURL from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-open-url@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-open-url/tags). For example,
+
+```javascript
 import openURL from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-open-url@v0.2.3-esm/index.mjs';
 ```
 
@@ -105,7 +110,7 @@ var win = openURL( 'https://google.com' );
 <body>
 <script type="module">
 
-import openURL from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-open-url@v0.2.3-esm/index.mjs';
+import openURL from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-open-url@esm/index.mjs';
 
 // Open a URL:
 var proc = openURL( 'https://github.com' );
