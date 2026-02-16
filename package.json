@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@stdlib/assert-is-darwin": "^0.2.3",
-    "@stdlib/assert-is-uri": "^0.2.2",
+    "@stdlib/assert-is-uri": "^0.2.3",
     "@stdlib/assert-is-windows": "^0.2.3",
     "@stdlib/cli-ctor": "^0.2.3",
     "@stdlib/fs-read-file": "^0.2.3",
